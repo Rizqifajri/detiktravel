@@ -25,7 +25,7 @@ const CardNews = () => {
           <div className='flex w-full gap-5 h-auto my-5'>
             <div className='relative w-40 h-32 overflow-hidden rounded-lg'>
               <img
-                className='object-cover w-full h-full transition-transform duration-300 ease-in-out hover:scale-105'
+                className='object-cover w-full h-full transition-transform duration-300 ease-in-out hover:scale-105 '
                 src={thumbnail}
                 alt=''
               />
