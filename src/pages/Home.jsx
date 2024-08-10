@@ -2,7 +2,7 @@ import React from "react";
 import photo1 from "../assets/background1.png";
 import photo2 from "../assets/background2.png";
 import photo3 from "../assets/background3.png";
-import title from "../assets/title.png";
+import title from "../assets/Title.png";
 import Button from "../components/Button";
 import Carousels from "../components/Carousels";
 
