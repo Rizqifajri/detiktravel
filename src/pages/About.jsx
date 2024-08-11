@@ -7,13 +7,20 @@ import point1 from "../assets/icons/point.png";
 
 const About = () => {
   return (
-    <div className='bg-[#00D1FF] h-auto flex flex-col xl:flex-row gap-5 justify-center pb-10'>
-      <div>
+    <div className='relative h-auto flex flex-col xl:flex-row gap-5 justify-center py-24' style={{ backgroundImage: `url(${photo2})`, backgroundSize: 'cover' }}>
+      {/* Overlay biru */}
+      <div className='absolute inset-0 bg-gradient-to-t from-[#00d0ffec] via-[#00d0ff] to-[#00d0ff] opacity-95'></div>
+
+      {/* Konten Utama */}
+      <div className='relative z-10'>
         <img className='w-[400px] xl:w-[700px] md:mx-auto' src={aboutImg} alt='' />
       </div>
-      <div className='flex flex-col lg:flex-row xl:flex-col gap-5'>
+      
+      <div className='relative flex flex-col lg:flex-row xl:flex-col gap-5 z-10'>
         <div className='flex md:w-[700px] flex-col gap-5 mx-5'>
-          <h1 id="tentang-program" className='text-white font-bold text-[32px]'>Tentang Program</h1>
+          <h1 id='tentang-program' className='text-white font-bold text-[32px]'>
+            Tentang Program
+          </h1>
           <p className='text-white text-[16px] md:w-[500px] text-justify'>
             Bergabunglah dalam "Explore Thailand bersama Detiktravel"! Kompetisi
             ini terbuka bagi pembaca Detiktravel yang ingin menikmati perjalanan
@@ -24,6 +31,7 @@ const About = () => {
           </p>
           <Button title='Daftar Sekarang' />
         </div>
+        
         <div className='flex flex-col gap-5 mx-5'>
           <h1 className='text-white font-bold text-[32px]'>Mekanisme</h1>
           <div className='flex flex-col gap-5'>
@@ -50,7 +58,7 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-5'>
-              <img className="w-[40px] h-[40px]" src={point1} alt='' />
+              <img className='w-[40px] h-[40px]' src={point1} alt='' />
               <div className='flex flex-col'>
                 <h1 className='text-white font-bold text-[32px]'>
                   Pengumuman Pemenang
